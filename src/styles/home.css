@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+.header{
+    height: 150px;
+    width: 100dvw;
+    background: #4C8577;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > button{
+    margin: 10px;
+    background: #4C8577;
+    border: none;
+    font-size: 30px;
+    font-family: sansita;
+    transition: 0.3s;
+    color: #BBDCA7;
+    border-bottom: 1px solid transparent;
+}
+
+nav > button:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    border-bottom: 1px solid #BBDCA7;
+    transform: translateY(-10px);
+}
+
+.linkedin-icon{
+    position: absolute;
+    top: 0;
+    left: calc(100dvw - 100px);
+    font-size: 55px;
+    margin-top: 45px;
+    color: #BBDCA7;
+    transition: 0.3s;
+}
+
+.linkedin-icon:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    transform: translateY(-10px);
+}
