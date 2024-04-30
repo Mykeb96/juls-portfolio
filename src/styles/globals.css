@@ -4,4 +4,7 @@ body{
     margin: 0;
     height: 100dvh;
     width: 100dvw;
+    background: linear-gradient(to right,#004aad 0%,#cb6ce6 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
