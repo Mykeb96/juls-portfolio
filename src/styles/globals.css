@@ -7,4 +7,6 @@ body{
     background: linear-gradient(to right,#004aad 0%,#cb6ce6 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }

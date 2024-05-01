@@ -9,9 +9,22 @@ import ProjectsPage from "./ProjectsPage";
 import ContactPage from "./ContactPage";
 import { SiCalendly } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
+import Resume from '../../public/assets/Resume.pdf'
+import Modal from 'react-modal';
 
 export default function Home() {
 
+  const [modalIsOpen, setModalIsOpen] = useState(false)
+
+  function openModal()
+  {
+    setModalIsOpen(true)
+  }
+
+  function closeModal()
+  {
+    setModalIsOpen(false)
+  }
 
 
   return (
@@ -71,19 +84,27 @@ export default function Home() {
 
           <div className="welcome-blurb">
             <h1>Crafting Digital Narratives & Painting Perspectives</h1>
-            <button className="resume-button">RESUME</button>
-            <p>An Oregon State University student based out of Beaverton, Oregon, Juliet, <br />
-              strives to excel in the realm of social media marketing. <br />
-              With a major in digital marketing and a minor in graphic design, <br />
-              they fuse creativity with strategy to craft captivating campaigns. <br />
-              Their expertise spans content and SEO marketing, particularly within<br />
-              e-commerce, where they've demonstrated prowess in driving engagement<br />
-              and optimizing visibility. Beyond the digital landscape, they find <br />
-              inspiration in painting and literature, infusing their work with creativity <br />
+            <button className="resume-button" onClick={openModal}>RESUME</button>
+            <p>An Oregon State University student based out of Beaverton, Oregon, Juliet,
+              strives to excel in the realm of social media marketing.
+              With a major in digital marketing and a minor in graphic design,
+              they fuse creativity with strategy to craft captivating campaigns.
+              Their expertise spans content and SEO marketing, particularly within
+              e-commerce, where they've demonstrated prowess in driving engagement
+              and optimizing visibility. Beyond the digital landscape, they find
+              inspiration in painting and literature, infusing their work with creativity
               and narrative depth. Connect today to take your e-commerce business to new heights!</p>
           </div>
         </div>
 
+        <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        className='modal'
+        >
+        <iframe src={Resume} style={{margin: 'auto', width: '900px', height: '1000px'}}/>
+        <button onClick={closeModal}>Close</button>
+        </Modal>
 
 
       </main>

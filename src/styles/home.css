@@ -3,7 +3,6 @@
 .main-container{
     height: 100dvh;
     width: 100dvw;
-    /* background: linear-gradient(to right,#004aad 0%,#cb6ce6 100%); */
 }
 
 a{
@@ -21,7 +20,7 @@ nav{
     display: flex;
     height: fit-content;
     background: #F2F2F2;
-    width: 1000px;
+    width: 100%;
     justify-content: flex-end;
     height: 230px;
     padding-top: 70px;
@@ -44,7 +43,7 @@ nav{
 .nav-button:hover{
     cursor: pointer;
     transition: 0.3s;
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 .logo{
@@ -56,7 +55,7 @@ nav{
 .header-logo{
     display: flex;
     align-items: center;
-    width: 700px;
+    width: 100%;
     background: #F2F2F2;
     padding-left: 20px;
     padding-top: 40px;
@@ -79,9 +78,7 @@ nav{
     height: 550px;
     width: 350px;
     background: #f2f2f2cd;
-    position: absolute;
-    margin-top: 100px;
-    margin-left: 400px;
+    
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     border-radius: 16px;
     border: 2px solid black;
@@ -130,18 +127,93 @@ nav{
 }
 
 .welcome-blurb{
-    background: red;
-    width: fit-content;
+    width: 800px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-left: 100px;
+    background: #f2f2f2cd;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    border-radius: 16px;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    font-family: alice;
+}
+
+.welcome-blurb > p{
+    font-size: 20px;
+    width: 700px;
 }
 
 .resume-button{
     width: fit-content;
+    background: linear-gradient(to right,#004aad 0%,#cb6ce6 100%);
+    font-weight: bold;
+    border-radius: 16px;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid black;
+    color: whitesmoke;
+    font-family: alice;
+    letter-spacing: 2px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.resume-button:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    background: whitesmoke;
+    background: linear-gradient(to right,#004aad 0%,#cb6ce6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
 .main-content{
     display: flex;
+    position: absolute;
+    align-items: center;
+    height: 100dvh;
+    width: 100dvw;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.modal{
+    width: fit-content;
+    height: 95dvh;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.modal > button{
+    width: fit-content;
+    margin: auto;
+    background: linear-gradient(to right,#004aad 0%,#cb6ce6 100%);
+    font-weight: bold;
+    border-radius: 16px;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid black;
+    color: whitesmoke;
+    font-family: alice;
+    letter-spacing: 2px;
+    font-size: 20px;
+    transition: 0.3s;
+    margin-top: 30px;
+}
+
+.modal > button:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    background: whitesmoke;
+    background: linear-gradient(to right,#004aad 0%,#cb6ce6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
